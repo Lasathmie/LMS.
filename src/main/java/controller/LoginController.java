@@ -17,10 +17,10 @@ public class LoginController {
         String username = usernameField.getText();
         String password = passwordField.getText();
 
-        // Perform login validation here
+        
         if ("admin".equals(username) && "password".equals(password)) {
             System.out.println("Login successful");
-            // Navigate to the main application screen
+            
         } else {
             System.out.println("Login failed");
         }

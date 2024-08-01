@@ -12,7 +12,7 @@ public class BookDAO extends GenericDAO<Book> {
         super(Book.class);
     }
 
-    // Additional methods specific to Book entity can be added here
+    
     public List<Book> getBooksByCategory(int categoryId) {
         try (Session session = HibernateUtil.getSessionFactory().openSession()) {
             return session.createQuery("from Book where category_id = :categoryId", Book.class)
@@ -41,8 +41,8 @@ public class BookDAO extends GenericDAO<Book> {
                           .list();
         }
     }
-    
-    
+
+   
     
     
 }    
